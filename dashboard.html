@@ -1,0 +1,836 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- META SECTION -->
+		<title>ICICI Credit Origination System</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+		
+		<link rel="icon" href="favicon.ico" type="image/x-icon" />
+		<!-- END META SECTION -->
+		
+		<!-- CSS INCLUDE -->		
+		<link rel="stylesheet" type="text/css" href="css/style.css"/>
+		<!-- EOF CSS INCLUDE -->									
+	</head>
+	<body>
+		<!-- START PAGE CONTAINER -->
+		<div class="page-container">
+			
+			<!--HEADER START-->
+			<header>
+				<div class="row">
+					<div class="col-xs-2 col-md-3 logo-container"><a href="dashboard.html"><div class="logo"><span></span></div></a></div>
+					<div class="col-xs-10 col-md-9"><h2>ICICI Credit Origination System</h2></div>
+				</div>
+				<!--Header 2 Start-->
+				<div class="row header-2">
+					<div class="col-xs-12 col-sm-8 col-md-6">
+						<!--header 2 left-->
+						<div class="header-2-left">
+							<form class="search-form">
+								<div class="form-group">
+									SEARCH
+									<select class="form-control">
+										<option selected>Credit Appraisal</option>
+										<option>WBG CAL</option>
+										<option>CAOD</option>
+										<option>Master Management</option>
+										<option>Security Valuation</option>
+										<option>TSR</option>
+										<option>Sanction Process</option>
+									</select>
+									<select class="form-control">
+										<option selected>Search by Instance ID</option>
+										<option>Instance ID</option>
+									</select>
+									OR
+									<input type="text" class="form-control" placeholder="Enter Instance ID" />
+									<input type="button" class="go-btn" value="GO" />
+								</div>
+							</form>
+						</div>
+					</div>
+					<div class="col-xs-12 col-sm-4 col-md-6 header-2-right">
+						<!--header 2 right-->
+						<div class="header-2-right-content">
+							<div class="nav-right">Last Login : Aug 24, 2018 6:28:30 PM</div>
+						</div>
+					</div>
+				</div>
+				<!--Header 2 End-->
+				
+				
+				<div class="row header-3">
+					<div class="col-xs-6 col-md-6">
+						<!-- START BREADCRUMB -->
+						<ul class="breadcrumb">
+							<li><a href="#">Home</a></li>					
+							<li class="active">Dashboard</li>
+						</ul>
+						<!-- END BREADCRUMB -->
+					</div>
+					<div class="col-xs-6 col-md-6">
+						<!-- START X-NAVIGATION VERTICAL -->
+						<ul class="x-navigation x-navigation-horizontal x-navigation-panel">
+							
+							<!-- SIGN OUT -->
+							<li class="xn-icon-button pull-right">
+								<a href="#" class="mb-control" data-box="#mb-signout"><span class="fa fa-sign-out"></span></a>						
+							</li> 
+							<!-- END SIGN OUT -->
+							<!-- NOTIFICATION -->
+							<li class="xn-icon-button pull-right">
+								<a href="#"><span class="fa fa-bell"></span></a>
+								<div class="informer informer-warning">4</div>
+								<div class="panel panel-primary animated zoomIn xn-drop-left xn-panel-dragging">
+									<div class="panel-heading">
+										<h3 class="panel-title"><span class="fa fa-bell"></span> Notification</h3>								
+										<div class="pull-right">
+											<span class="label label-danger">4 new</span>
+										</div>
+									</div>
+									<div class="panel-body list-group list-group-contacts scroll" style="height: 200px;">
+										<a href="#" class="list-group-item">
+											<div class="list-group-status status-online"></div>
+											<img src="img/no-image.jpg" class="pull-left" alt="John Doe"/>
+											<span class="contacts-title">John Doe</span>
+											<p>Praesent placerat tellus id augue condimentum</p>
+										</a>
+										<a href="#" class="list-group-item">
+											<div class="list-group-status status-away"></div>
+											<img src="img/no-image.jpg" class="pull-left" alt="Dmitry Ivaniuk"/>
+											<span class="contacts-title">Dmitry Ivaniuk</span>
+											<p>Donec risus sapien, sagittis et magna quis</p>
+										</a>
+										<a href="#" class="list-group-item">
+											<div class="list-group-status status-away"></div>
+											<img src="img/no-image.jpg" class="pull-left" alt="Nadia Ali"/>
+											<span class="contacts-title">Nadia Ali</span>
+											<p>Mauris vel eros ut nunc rhoncus cursus sed</p>
+										</a>
+										<a href="#" class="list-group-item">
+											<div class="list-group-status status-offline"></div>
+											<img src="img/no-image.jpg" class="pull-left" alt="Darth Vader"/>
+											<span class="contacts-title">Darth Vader</span>
+											<p>I want my money back!</p>
+										</a>
+									</div>	 
+									<div class="panel-footer text-center">
+										<a href="#">Show all notification</a>
+									</div>							
+								</div>						
+							</li>
+							<!-- END NOTIFICATION -->
+							<!-- TASKS -->
+							<li class="xn-icon-button pull-right">
+								<a href="#"><span class="fa fa-tasks"></span></a>
+								<div class="informer informer-warning">3</div>
+								<div class="panel panel-primary animated zoomIn xn-drop-left xn-panel-dragging">
+									<div class="panel-heading">
+										<h3 class="panel-title"><span class="fa fa-tasks"></span> Tasks</h3>								
+										<div class="pull-right">
+											<span class="label label-warning">3 active</span>
+										</div>
+									</div>
+									<div class="panel-body list-group scroll" style="height: 200px;">								
+										<a class="list-group-item" href="#">
+											<strong>Phasellus augue arcu, elementum</strong>
+											<div class="progress progress-small progress-striped active">
+												<div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%;">50%</div>
+											</div>
+											<small class="text-muted">John Doe, 25 Sep 2014 / 50%</small>
+										</a>
+										<a class="list-group-item" href="#">
+											<strong>Aenean ac cursus</strong>
+											<div class="progress progress-small progress-striped active">
+												<div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%;">80%</div>
+											</div>
+											<small class="text-muted">Dmitry Ivaniuk, 24 Sep 2014 / 80%</small>
+										</a>
+										<a class="list-group-item" href="#">
+											<strong>Lorem ipsum dolor</strong>
+											<div class="progress progress-small progress-striped active">
+												<div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="width: 95%;">95%</div>
+											</div>
+											<small class="text-muted">John Doe, 23 Sep 2014 / 95%</small>
+										</a>
+										<a class="list-group-item" href="#">
+											<strong>Cras suscipit ac quam at tincidunt.</strong>
+											<div class="progress progress-small">
+												<div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%;">100%</div>
+											</div>
+											<small class="text-muted">John Doe, 21 Sep 2014 /</small><small class="text-success"> Done</small>
+										</a>								
+									</div>	 
+									<div class="panel-footer text-center">
+										<a href="pages-tasks.html">Show all tasks</a>
+									</div>							
+								</div>						
+							</li>
+							<!-- END TASKS -->
+							<!-- USER INFO START -->
+							<li class="xn-icon-button pull-right">
+								<a href="#"><span class="fa fa-user"></span></a>
+								<div class="panel panel-primary animated zoomIn xn-drop-left user-box">
+									<div class="panel-heading">
+										<h3 class="panel-title"><span class="fa fa-user-circle"></span> Welcome Mr. Sam</h3>
+									</div>
+									<div class="panel-body list-group list-group-contacts">								
+										<a href="#" class="list-group-item">
+											<span class="fa fa-edit"></span>
+											<span class="contacts-title">Edit Profile</span>
+										</a>
+										<a href="#" class="list-group-item">
+											<span class="fa fa-cog"></span>
+											<span class="contacts-title">Account Setting</span>
+										</a>
+										<button id="change-password" class="list-group-item"><span class="fa fa-key"></span>
+										<span class="contacts-title">Change Password</span></button>
+										
+									</div>						
+								</div>						
+							</li>
+							<!-- END USER INFO -->
+							<li class="pull-right">
+								<input type="button" class="btn orange-btn" value="Save" />
+							</li>
+						</ul>
+						<!-- END X-NAVIGATION VERTICAL -->
+					</div>
+				</div>
+				
+			</header>
+			<!--HEADER END-->
+			
+			<!--MAIN START-->
+			<main>
+				<!-- START PAGE SIDEBAR -->
+				
+				<div class="page-sidebar page-sidebar-fixed scroll">
+					<!-- START X-NAVIGATION -->
+					<!-- <a href="#" class="x-navigation-minimize"><span class="fa fa-dedent"></span></a> -->
+					<ul class="x-navigation">
+						<li>
+							<a href="#" class="x-navigation-control"></a>
+						</li>
+						<!-- <li class="xn-profile">
+							<a href="#" class="profile-mini">
+							<img src="img/no-image.jpg" alt="John Doe"/>
+							</a>
+							<div class="profile">
+							<div class="profile-image">
+							<img src="img/no-image.jpg" alt="John Doe"/>
+							</div>
+							<div class="profile-data">
+							<div class="profile-data-name">John Doe</div>
+							<div class="profile-data-title"></div>
+							</div>
+							<div class="profile-controls">
+							<a href="pages-profile.html" class="profile-control-left"><span class="fa fa-info"></span></a>
+							<a href="pages-messages.html" class="profile-control-right"><span class="fa fa-envelope"></span></a>
+							</div>
+							</div>																		
+						</li> -->
+						<li class="active xn-openable"><a href="dashboard.html"><span class="fa fa-desktop"></span> <span class="xn-text">Dashboard</span></a>
+							<ul>                                    
+								<li><a href="#"><span class="fa fa-angle-double-right"></span> Page 1</a></li>
+								<li><a href="#"><span class="fa fa-angle-double-right"></span> Page 2</a></li>
+							</ul>
+						</li>
+						<li><a href="table.html"><span class="fa fa-table"></span>  <span class="xn-text">Table</span></a></li>
+						<li><a href="form.html"><span class="fa fa-tasks"></span>  <span class="xn-text">Form</span></a></li>
+						<li><a href="box-tables.html"><span class="fa fa-list-alt"></span>  <span class="xn-text">Box Content</span></a></li>
+						<li><a href="panels.html"><span class="fa fa-square-o"></span>  <span class="xn-text">Panels</span></a></li>
+						<li><a href="table.html"><span class="fa fa-table"></span>  <span class="xn-text">Table</span></a></li>
+						<li><a href="form.html"><span class="fa fa-tasks"></span>  <span class="xn-text">Form</span></a></li>
+						<li><a href="box-tables.html"><span class="fa fa-list-alt"></span>  <span class="xn-text">Box Content</span></a></li>
+						<li><a href="panels.html"><span class="fa fa-square-o"></span>  <span class="xn-text">Panels</span></a></li>
+						<li><a href="table.html"><span class="fa fa-table"></span>  <span class="xn-text">Table</span></a></li>
+						<li><a href="form.html"><span class="fa fa-tasks"></span>  <span class="xn-text">Form</span></a></li>
+						<li><a href="box-tables.html"><span class="fa fa-list-alt"></span>  <span class="xn-text">Box Content</span></a></li>
+						<li><a href="panels.html"><span class="fa fa-square-o"></span>  <span class="xn-text">Panels</span></a></li>
+						<li><a href="table.html"><span class="fa fa-table"></span>  <span class="xn-text">Table</span></a></li>
+						<li><a href="form.html"><span class="fa fa-tasks"></span>  <span class="xn-text">Form</span></a></li>
+						<li><a href="box-tables.html"><span class="fa fa-list-alt"></span>  <span class="xn-text">Box Content</span></a></li>
+						<li><a href="panels.html"><span class="fa fa-square-o"></span>  <span class="xn-text">Panels</span></a></li>
+						<li><a href="table.html"><span class="fa fa-table"></span>  <span class="xn-text">Table</span></a></li>
+						<li><a href="form.html"><span class="fa fa-tasks"></span>  <span class="xn-text">Form</span></a></li>
+						<li><a href="box-tables.html"><span class="fa fa-list-alt"></span>  <span class="xn-text">Box Content</span></a></li>
+						<li><a href="panels.html"><span class="fa fa-square-o"></span>  <span class="xn-text">Panels</span></a></li>
+					</ul>
+					<!-- END X-NAVIGATION -->
+				</div>
+				<!-- END PAGE SIDEBAR -->
+				
+				<!-- PAGE CONTENT -->
+				<div class="page-content sortableContent" id="grid_content_1">
+					<!-- TOGGLE NAVIGATION -->
+                    <div class="slide-side-nav-icon"><a href="#" class="x-navigation-minimize"><span class="fa fa-dedent"></span></a></div>
+					<!-- END TOGGLE NAVIGATION -->
+					<!-- START WIDGETS -->	
+					<!-- PAGE CONTENT WRAPPER -->
+					<div class="page-content-wrap">			
+						<div class="row">
+							<div class="col-md-3">
+								
+								<!-- START WIDGET SLIDER -->
+								<div class="widget widget-default widget-carousel">
+									<div class="owl-carousel" id="owl-example">
+										<div>									
+											<div class="widget-title">Total Visitors</div>																		
+											<div class="widget-subtitle">27/08/2014 15:23</div>
+											<div class="widget-int">3,548</div>
+										</div>
+										<div>									
+											<div class="widget-title">Returned</div>
+											<div class="widget-subtitle">Visitors</div>
+											<div class="widget-int">1,695</div>
+										</div>
+										<div>									
+											<div class="widget-title">New</div>
+											<div class="widget-subtitle">Visitors</div>
+											<div class="widget-int">1,977</div>
+										</div>
+									</div>							
+									<div class="widget-controls">								
+										<a href="#" class="widget-control-right widget-remove" data-toggle="tooltip" data-placement="top" title="Remove Widget"><span class="fa fa-times"></span></a>
+									</div>							 
+								</div>		 
+								<!-- END WIDGET SLIDER -->
+								
+							</div>
+							<div class="col-md-3">
+								
+								<!-- START WIDGET MESSAGES -->
+								<div class="widget widget-default widget-item-icon" onclick="location.href='pages-messages.html';">
+									<div class="widget-item-left">
+										<span class="fa fa-envelope"></span>
+									</div>							 
+									<div class="widget-data">
+										<div class="widget-int num-count">48</div>
+										<div class="widget-title">New messages</div>
+										<div class="widget-subtitle">In your mailbox</div>
+									</div>	  
+									<div class="widget-controls">								
+										<a href="#" class="widget-control-right widget-remove" data-toggle="tooltip" data-placement="top" title="Remove Widget"><span class="fa fa-times"></span></a>
+									</div>
+								</div>							
+								<!-- END WIDGET MESSAGES -->
+								
+							</div>
+							<div class="col-md-3">
+								
+								<!-- START WIDGET REGISTRED -->
+								<div class="widget widget-default widget-item-icon" onclick="location.href='pages-address-book.html';">
+									<div class="widget-item-left">
+										<span class="fa fa-user"></span>
+									</div>
+									<div class="widget-data">
+										<div class="widget-int num-count">375</div>
+										<div class="widget-title">Registred users</div>
+										<div class="widget-subtitle">On your website</div>
+									</div>
+									<div class="widget-controls">								
+										<a href="#" class="widget-control-right widget-remove" data-toggle="tooltip" data-placement="top" title="Remove Widget"><span class="fa fa-times"></span></a>
+									</div>							
+								</div>							
+								<!-- END WIDGET REGISTRED -->
+								
+							</div>
+							<div class="col-md-3">
+								
+								<!-- START WIDGET CLOCK -->
+								<div class="widget widget-info widget-padding-sm">
+									<div class="widget-big-int plugin-clock">00:00</div>							
+									<div class="widget-subtitle plugin-date">Loading...</div>
+									<div class="widget-controls">								
+										<a href="#" class="widget-control-right widget-remove" data-toggle="tooltip" data-placement="left" title="Remove Widget"><span class="fa fa-times"></span></a>
+									</div>							
+									<div class="widget-buttons widget-c3">
+										<div class="col">
+											<a href="#"><span class="fa fa-clock-o"></span></a>
+										</div>
+										<div class="col">
+											<a href="#"><span class="fa fa-bell"></span></a>
+										</div>
+										<div class="col">
+											<a href="#"><span class="fa fa-calendar"></span></a>
+										</div>
+									</div>							
+								</div>						
+								<!-- END WIDGET CLOCK -->
+								
+							</div>
+						</div>
+						<!-- END WIDGETS -->					
+						
+						<!-- START PORTLET -->
+						<div class="row scRow">
+							<div class="col-md-6 scCol">
+								<div class="panel panel-colorful" id="grid_block_1">
+									<div class="panel-heading">
+										<div class="panel-title-box">
+											<h3>Users Activity</h3>
+											<span>Users vs returning</span>
+										</div>									
+										<ul class="panel-controls">
+											<li><a href="#" class="panel-fullscreen"><span class="fa fa-expand"></span></a></li>
+											<li><a href="#" class="panel-refresh"><span class="fa fa-refresh"></span></a></li>
+											<li class="dropdown">
+												<a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="fa fa-cog"></span></a>										
+												<ul class="dropdown-menu">
+													<li><a href="#" class="panel-collapse"><span class="fa fa-angle-down"></span> Collapse</a></li>
+													<li><a href="#" class="panel-remove"><span class="fa fa-times"></span> Remove</a></li>
+												</ul>										
+											</li>										
+										</ul>									
+									</div>								
+									<div class="panel-body padding-0">
+										<div class="chart-holder svg-element" id="dashboard-bar-1"></div>
+									</div>
+								</div>
+								
+								<div class="panel panel-colorful" id="grid_block_2">
+									<div class="panel-heading">
+										<h3 class="panel-title">CSM (20)</h3>
+										
+										<ul class="panel-controls">
+											<li>
+												<div class="btn-group pull-right">
+													<button class="btn btn-danger dropdown-toggle" data-toggle="dropdown"><i class="fa fa-bars"></i> Export Data</button>
+													<ul class="dropdown-menu">
+														<li><a href="#" onClick ="$('#customers2').tableExport({type:'csv',escape:'false'});"><img src='img/icons/csv.png' width="24"/> CSV</a></li>
+														<li><a href="#" onClick ="$('#customers2').tableExport({type:'txt',escape:'false'});"><img src='img/icons/txt.png' width="24"/> TXT</a></li>
+														<li class="divider"></li>
+														<li><a href="#" onClick ="$('#customers2').tableExport({type:'excel',escape:'false'});"><img src='img/icons/xls.png' width="24"/> XLS</a></li>
+														<li><a href="#" onClick ="$('#customers2').tableExport({type:'pdf',escape:'false'});"><img src='img/icons/pdf.png' width="24"/> PDF</a></li>
+													</ul>
+												</div>
+											</li>
+											<li><a href="#" class="panel-fullscreen"><span class="fa fa-expand"></span></a></li>
+											<li><a href="#" class="panel-refresh"><span class="fa fa-refresh"></span></a></li>
+											<li><a href="#" class="panel-collapse"><span class="fa fa-angle-down"></span></a></li>
+											<li><a href="#" class="panel-remove"><span class="fa fa-times"></span></a></li>
+										</ul>
+									</div>
+									<div class="panel-body panel-body-table">
+										<table class="table datatable table-striped table-bordered display">
+											<thead class="b-title">
+												<tr>
+													<th>Process Instance ID</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td><a href="popup-page.html" onClick="popup=window.open('popup-page.html','popup',width=600,height=300); return false;">CAOD-000000000000000000017-PRO</a></td>
+												</tr>
+												<tr>
+													<td><a href="popup-page.html" onClick="popup=window.open('popup-page.html','popup',width=600,height=300); return false;">CAOD-000000000000000000016-PRO</a></td>
+												</tr>
+												<tr>
+													<td><a href="popup-page.html" onClick="popup=window.open('popup-page.html','popup',width=600,height=300); return false;">CAOD-000000000000000000068-PRO</a></td>
+												</tr>
+												<tr>
+													<td><a href="popup-page.html" onClick="popup=window.open('popup-page.html','popup',width=600,height=300); return false;">CAOD-000000000000000000006-PRO</a></td>
+												</tr>
+												<tr>
+													<td><a href="popup-page.html" onClick="popup=window.open('popup-page.html','popup',width=600,height=300); return false;">CAOD-000000000000000000077-PRO</a></td>
+												</tr>
+												<tr>
+													<td><a href="popup-page.html" onClick="popup=window.open('popup-page.html','popup',width=600,height=300); return false;">CAOD-000000000000000000033-PRO</a></td>
+												</tr>
+												<tr>
+													<td><a href="popup-page.html" onClick="popup=window.open('popup-page.html','popup',width=600,height=300); return false;">CAOD-000000000000000000046-PRO</a></td>
+												</tr>
+												<tr>
+													<td><a href="popup-page.html" onClick="popup=window.open('popup-page.html','popup',width=600,height=300); return false;">CAOD-000000000000000000057-PRO</a></td>
+												</tr>
+												<tr>
+													<td><a href="popup-page.html" onClick="popup=window.open('popup-page.html','popup',width=600,height=300); return false;">CAOD-000000000000000000067-PRO</a></td>
+												</tr>
+												<tr>
+													<td><a href="popup-page.html" onClick="popup=window.open('popup-page.html','popup',width=600,height=300); return false;">CAOD-000000000000000000041-PRO</a></td>
+												</tr>
+												<tr>
+													<td><a href="popup-page.html" onClick="popup=window.open('popup-page.html','popup',width=600,height=300); return false;">CAOD-000000000000000000027-PRO</a></td>
+												</tr>
+												<tr>
+													<td><a href="popup-page.html" onClick="popup=window.open('popup-page.html','popup',width=600,height=300); return false;">CAOD-000000000000000000029-PRO</a></td>
+												</tr>
+												<tr>
+													<td><a href="popup-page.html" onClick="popup=window.open('popup-page.html','popup',width=600,height=300); return false;">CAOD-000000000000000000030-PRO</a></td>
+												</tr>
+												<tr>
+													<td><a href="popup-page.html" onClick="popup=window.open('popup-page.html','popup',width=600,height=300); return false;">CAOD-000000000000000000019-PRO</a></td>
+												</tr>
+												<tr>
+													<td><a href="popup-page.html" onClick="popup=window.open('popup-page.html','popup',width=600,height=300); return false;">CAOD-000000000000000000035-PRO</a></td>
+												</tr>
+												<tr>
+													<td><a href="popup-page.html" onClick="popup=window.open('popup-page.html','popup',width=600,height=300); return false;">CAOD-000000000000000000022-PRO</a></td>
+												</tr>
+												<tr>
+													<td><a href="popup-page.html" onClick="popup=window.open('popup-page.html','popup',width=600,height=300); return false;">CAOD-000000000000000000048-PRO</a></td>
+												</tr>
+												<tr>
+													<td><a href="popup-page.html" onClick="popup=window.open('popup-page.html','popup',width=600,height=300); return false;">CAOD-000000000000000000012-PRO</a></td>
+												</tr>
+												<tr>
+													<td><a href="popup-page.html" onClick="popup=window.open('popup-page.html','popup',width=600,height=300); return false;">CAOD-000000000000000000058-PRO</a></td>
+												</tr>
+												<tr>
+													<td><a href="popup-page.html" onClick="popup=window.open('popup-page.html','popup',width=600,height=300); return false;">CAOD-00000000000000000008-PRO</a></td>
+												</tr>
+												<tr>
+													<td><a href="popup-page.html" onClick="popup=window.open('popup-page.html','popup',width=600,height=300); return false;">CAOD-000000000000000000067-PRO</a></td>
+												</tr>
+												<tr>
+													<td><a href="popup-page.html" onClick="popup=window.open('popup-page.html','popup',width=600,height=300); return false;">CAOD-000000000000000000041-PRO</a></td>
+												</tr>
+												<tr>
+													<td><a href="popup-page.html" onClick="popup=window.open('popup-page.html','popup',width=600,height=300); return false;">CAOD-000000000000000000027-PRO</a></td>
+												</tr>
+												<tr>
+													<td><a href="popup-page.html" onClick="popup=window.open('popup-page.html','popup',width=600,height=300); return false;">CAOD-000000000000000000029-PRO</a></td>
+												</tr>
+												<tr>
+													<td><a href="popup-page.html" onClick="popup=window.open('popup-page.html','popup',width=600,height=300); return false;">CAOD-000000000000000000030-PRO</a></td>
+												</tr>
+												<tr>
+													<td><a href="popup-page.html" onClick="popup=window.open('popup-page.html','popup',width=600,height=300); return false;">CAOD-000000000000000000019-PRO</a></td>
+												</tr>
+												<tr>
+													<td><a href="popup-page.html" onClick="popup=window.open('popup-page.html','popup',width=600,height=300); return false;">CAOD-000000000000000000035-PRO</a></td>
+												</tr>
+												<tr>
+													<td><a href="popup-page.html" onClick="popup=window.open('popup-page.html','popup',width=600,height=300); return false;">CAOD-000000000000000000022-PRO</a></td>
+												</tr>
+												<tr>
+													<td><a href="popup-page.html" onClick="popup=window.open('popup-page.html','popup',width=600,height=300); return false;">CAOD-000000000000000000048-PRO</a></td>
+												</tr>
+												<tr>
+													<td><a href="popup-page.html" onClick="popup=window.open('popup-page.html','popup',width=600,height=300); return false;">CAOD-000000000000000000012-PRO</a></td>
+												</tr>
+												<tr>
+													<td><a href="popup-page.html" onClick="popup=window.open('popup-page.html','popup',width=600,height=300); return false;">CAOD-000000000000000000058-PRO</a></td>
+												</tr>
+												<tr>
+													<td><a href="popup-page.html" onClick="popup=window.open('popup-page.html','popup',width=600,height=300); return false;">CAOD-00000000000000000008-PRO</a></td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+								
+							</div>
+							<div class="col-md-6 scCol">
+								
+								<div class="panel panel-colorful" id="grid_block_3">
+									<div class="panel-heading">
+										<div class="panel-title-box">
+											<h3>Visitors</h3>
+											<span>Visitors (last month)</span>
+										</div>
+										<ul class="panel-controls">
+											<li><a href="#" class="panel-fullscreen"><span class="fa fa-expand"></span></a></li>
+											<li><a href="#" class="panel-refresh"><span class="fa fa-refresh"></span></a></li>
+											<li class="dropdown">
+												<a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="fa fa-cog"></span></a>										
+												<ul class="dropdown-menu">
+													<li><a href="#" class="panel-collapse"><span class="fa fa-angle-down"></span> Collapse</a></li>
+													<li><a href="#" class="panel-remove"><span class="fa fa-times"></span> Remove</a></li>
+												</ul>										
+											</li>										
+										</ul>
+									</div>
+									<div class="panel-body padding-0">
+										<div class="chart-holder svg-element" id="dashboard-donut-1"></div>
+									</div>
+								</div>
+								
+								<div class="panel panel-colorful" id="grid_block_4">
+									<div class="panel-heading">
+										<h3 class="panel-title">Central Credit Manager (5)</h3>
+										
+										<ul class="panel-controls">
+											<li>
+												<div class="btn-group pull-right">
+													<button class="btn btn-danger dropdown-toggle" data-toggle="dropdown"><i class="fa fa-bars"></i> Export Data</button>
+													<ul class="dropdown-menu">
+														<li><a href="#" onClick ="$('#customers2').tableExport({type:'csv',escape:'false'});"><img src='img/icons/csv.png' width="24"/> CSV</a></li>
+														<li><a href="#" onClick ="$('#customers2').tableExport({type:'txt',escape:'false'});"><img src='img/icons/txt.png' width="24"/> TXT</a></li>
+														<li class="divider"></li>
+														<li><a href="#" onClick ="$('#customers2').tableExport({type:'excel',escape:'false'});"><img src='img/icons/xls.png' width="24"/> XLS</a></li>
+														<li><a href="#" onClick ="$('#customers2').tableExport({type:'pdf',escape:'false'});"><img src='img/icons/pdf.png' width="24"/> PDF</a></li>
+													</ul>
+												</div>
+											</li>
+											<li><a href="#" class="panel-fullscreen"><span class="fa fa-expand"></span></a></li>
+											<li><a href="#" class="panel-refresh"><span class="fa fa-refresh"></span></a></li>
+											<li><a href="#" class="panel-collapse"><span class="fa fa-angle-down"></span></a></li>
+											<li><a href="#" class="panel-remove"><span class="fa fa-times"></span></a></li>
+										</ul>
+									</div>
+									<div class="panel-body panel-body-table">
+										<table class="table datatable table-striped table-bordered display">
+											<thead class="b-title">
+												<tr>
+													<th>Process Instance ID</th>
+													<th>UCC</th>
+													<th>Client Name</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td><a href="#">CAOD-000000000000000000017-PRO</a></td>
+													<td><a href="#">221312</a></td>
+													<td><a href="#">Marco</a></td>
+												</tr>
+												<tr>
+													<td><a href="#">CAOD-000000000000000000016-PRO</a></td>
+													<td><a href="#">112233</a></td>
+													<td><a href="#">Taikin</a></td>
+												</tr>
+												<tr>
+													<td><a href="#">CAOD-000000000000000000068-PRO</a></td>
+													<td><a href="#">087893</a></td>
+													<td><a href="#">Omar</a></td>
+												</tr>
+												<tr>
+													<td><a href="#">CAOD-000000000000000000006-PRO</a></td>
+													<td><a href="#">087893</a></td>
+													<td><a href="#">Omar</a></td>
+												</tr>
+												<tr>
+													<td><a href="#">CAOD-000000000000000000077-PRO</a></td>
+													<td><a href="#">087893</a></td>
+													<td><a href="#">Omar</a></td>
+												</tr>
+												<tr>
+													<td><a href="#">CAOD-000000000000000000033-PRO</a></td>
+													
+													
+													<td><a href="#">087893</a></td>
+													<td><a href="#">Omar</a></td>
+												</tr>
+												<tr>
+													<td><a href="#">CAOD-000000000000000000046-PRO</a></td>
+													<td><a href="#">087893</a></td>
+													<td><a href="#">Omar</a></td>
+												</tr>
+												<tr>
+													<td><a href="#">CAOD-000000000000000000057-PRO</a></td>
+													<td><a href="#">087893</a></td>
+													<td><a href="#">Omar</a></td>
+												</tr>
+												<tr>
+													<td><a href="#">CAOD-000000000000000000067-PRO</a></td>
+													<td><a href="#">087893</a></td>
+													<td><a href="#">Omar</a></td>
+												</tr>
+												<tr>
+													<td><a href="#">CAOD-000000000000000000041-PRO</a></td>
+													<td><a href="#">087893</a></td>
+													<td><a href="#">Omar</a></td>
+												</tr>
+												<tr>
+													<td><a href="#">CAOD-000000000000000000027-PRO</a></td>
+													<td><a href="#">087893</a></td>
+													<td><a href="#">Omar</a></td>
+												</tr>
+												<tr>
+													<td><a href="#">CAOD-000000000000000000029-PRO</a></td>
+													<td><a href="#">087893</a></td>
+													<td><a href="#">Omar</a></td>
+												</tr>
+												<tr>
+													<td><a href="#">CAOD-000000000000000000030-PRO</a></td>
+													<td><a href="#">087893</a></td>
+													<td><a href="#">Omar</a></td>
+												</tr>
+												<tr>
+													<td><a href="#">CAOD-000000000000000000019-PRO</a></td>
+													<td><a href="#">087893</a></td>
+													<td><a href="#">Omar</a></td>
+												</tr>
+												<tr>
+													<td><a href="#">CAOD-000000000000000000035-PRO</a></td>
+													<td><a href="#">087893</a></td>
+													<td><a href="#">Omar</a></td>
+												</tr>
+												<tr>
+													<td><a href="#">CAOD-000000000000000000022-PRO</a></td>
+													<td><a href="#">087893</a></td>
+													<td><a href="#">Omar</a></td>
+												</tr>
+												<tr>
+													<td><a href="#">CAOD-000000000000000000048-PRO</a></td>
+													<td><a href="#">087893</a></td>
+													<td><a href="#">Omar</a></td>
+												</tr>
+												<tr>
+													<td><a href="#">CAOD-000000000000000000012-PRO</a></td>
+													<td><a href="#">087893</a></td>
+													<td><a href="#">Omar</a></td>
+												</tr>
+												<tr>
+													<td><a href="#">CAOD-000000000000000000058-PRO</a></td>
+													<td><a href="#">087893</a></td>
+													<td><a href="#">Omar</a></td>
+												</tr>
+												<tr>
+													<td><a href="#">CAOD-00000000000000000008-PRO</a></td>
+													<td><a href="#">087893</a></td>
+													<td><a href="#">Omar</a></td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+							</div>
+						</div>                
+						<!-- END PORTLET -->
+						
+						<div class="row">
+							<div class="col-md-12">
+								<button class="btn btn-primary sc-set-default pull-right">Reset to default</button>
+							</div>
+							<div class="col-md-12">
+								&nbsp;
+							</div>
+						</div>
+						
+					</div>
+					<!-- END PAGE CONTENT WRAPPER -->								
+				</div>			
+				<!-- END PAGE CONTENT -->
+				
+				
+			</main>
+			<!--MAIN END-->
+			
+			<!--FOOTER START-->
+			<footer>Copyright &copy; 2019 SERVOSYS SOLUTIONS. All rights reserved.</footer>
+			<!--FOOTER END-->
+		</div>
+		<!-- END PAGE CONTAINER -->
+		<!-- MESSAGE BOX-->
+		<div class="message-box animated fadeIn" data-sound="alert" id="mb-signout">
+			<div class="mb-container">
+				<div class="mb-middle">
+					<div class="mb-title"><span class="fa fa-sign-out"></span> Log <strong>Out</strong> ?</div>
+					<div class="mb-content">
+						<p>Are you sure you want to log out?</p>					
+						<p>Press No if you want to continue work. Press Yes to logout current user.</p>
+					</div>
+					<div class="mb-footer">
+						<div class="pull-right">
+							<a href="login.html" class="btn btn-warning btn-lg">Yes</a>
+							<button class="btn btn-default btn-lg mb-control-close">No</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- END MESSAGE BOX-->
+		
+		<!-- CHANGE PASSWORD MODALS -->        
+		<div class="modal" id="change-password-modal" tabindex="-1" role="dialog" aria-labelledby="smallModalHead" aria-hidden="true">
+			<div class="modal-dialog modal-sm">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+						<h4 class="modal-title" id="defModalHead">Change Password</h4>
+					</div>
+					<div class="modal-body">
+						<div class="change-password-box">
+							<div class="form-group">
+								<label class="control-label">Old Password</label>
+								<input type="password" class="form-control">
+							</div>
+							
+							<div class="form-group">
+								<label class="control-label">New Password</label>
+								<input type="password" class="form-control">
+							</div>
+							
+							<div class="form-group">
+								<label class="control-label">Confirm Password</label>
+								<input type="password" class="form-control">
+							</div>
+							<div class="form-group text-danger"> New password should not matche with last 3 password</div>
+						</div>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default">Reset</button>   
+						<button type="button" class="btn btn-default">Submit</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<!-- START SCRIPTS -->
+		<!-- START PLUGINS -->
+		<script type="text/javascript" src="js/plugin/jquery/jquery.min.js"></script>
+		<script type="text/javascript" src="js/plugin/jquery/jquery-ui.min.js"></script>
+		<script type="text/javascript" src="js/plugin/bootstrap/bootstrap.min.js"></script>  	
+		<!-- END PLUGINS -->
+		<script type="text/javascript" src="js/portlet.js"></script>
+		
+		<!-- START THIS PAGE PLUGINS-->
+		<script type='text/javascript' src='js/plugin/icheck/icheck.min.js'></script>		
+		<script type="text/javascript" src="js/plugin/mcustomscrollbar/jquery.mCustomScrollbar.min.js"></script>
+		<script type="text/javascript" src="js/plugin/scrolltotop/scrolltopcontrol.js"></script>
+		
+		<script type="text/javascript" src="js/plugin/morris/raphael-min.js"></script>
+		<script type="text/javascript" src="js/plugin/morris/morris.min.js"></script>
+		<script type='text/javascript' src='js/plugin/bootstrap/bootstrap-datepicker.js'></script>
+		<script type="text/javascript" src="js/plugin/owl/owl.carousel.min.js"></script>				 
+		
+		<script type="text/javascript" src="js/plugin/moment.min.js"></script>
+		<script type="text/javascript" src="js/plugin/daterangepicker/daterangepicker.js"></script>
+		
+		<script type="text/javascript" src="js/plugin/datatables/jquery.dataTables.min.js"></script>
+		<script type="text/javascript" src="js/plugin/tableexport/tableExport.js"></script>
+		<script type="text/javascript" src="js/plugin/tableexport/jquery.base64.js"></script>
+		<script type="text/javascript" src="js/plugin/tableexport/html2canvas.js"></script>
+		<script type="text/javascript" src="js/plugin/tableexport/jspdf/libs/sprintf.js"></script>
+		<script type="text/javascript" src="js/plugin/tableexport/jspdf/jspdf.js"></script>
+		<script type="text/javascript" src="js/plugin/tableexport/jspdf/libs/base64.js"></script>
+		<!-- END THIS PAGE PLUGINS-->	
+		
+		<!-- START TEMPLATE -->
+		<script type="text/javascript" src="js/plugins.js"></script>		
+		<script type="text/javascript" src="js/actions.js"></script>
+		<!-- <script type="text/javascript" src="js/demo_dashboard.js"></script> -->
+		<!-- END TEMPLATE -->
+		<!-- <script type="text/javascript" src="js/script.js"></script> -->
+		<script type="">
+			$(function(){
+			$('#change-password').click(function(){
+			//alert('hi');
+			$('#change-password-modal').modal('show');
+			return false;
+			})
+			});
+			
+			
+			
+			$(document).ready(function(){
+			    $(".xn-openable").hover(            
+			        function() {
+			            $('.xn-openable ul', this).not('.in .dropdown-menu').stop(true,true).slideDown("400");
+			            $(this).toggleClass('open');        
+			        },
+			        function() {
+			            $('.dropdown-menu', this).not('.in .dropdown-menu').stop(true,true).slideUp("400");
+			            $(this).toggleClass('open');       
+			        }
+			    );
+			});
+		</script>
+		<!-- END SCRIPTS -->		 
+	</body>
+</html>								

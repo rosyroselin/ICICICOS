@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>		
+		<!-- META SECTION -->
+		<title>ICICI Credit Origination System</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="icon" href="favicon.ico" type="image/x-icon" />
+		<!-- END META SECTION -->
+		
+		<!-- CSS INCLUDE -->		
+		<link rel="stylesheet" type="text/css" href="css/style.css"/>
+		<!-- EOF CSS INCLUDE -->									
+	</head>
+
+<body>
+<!--HEADER START-->
+<header>
+	<div class="container-fluid login-page">
+		<div class="row">
+			<div class="col-xs-12 col-sm-3 logo-container"><a href="dashboard.html"><div class="logo"><span></span></div></a></div>
+			<div class="col-xs-12 col-sm-9"><h2>ICICI Credit Origination System</h2></div>
+		</div>
+	</div>
+</header>
+<!--HEADER END-->
+
+<!--MAIN START-->
+<main class="login-page">
+	<div class="login-wrap">
+		<div class="login-html">
+			<input id="tab-1" type="radio" name="tab" class="internal" checked><label for="tab-1" class="tab">INTERNAL USER</label>
+			<input id="tab-2" type="radio" name="tab" class="external"><label for="tab-2" class="tab">EXTERNAL USER</label>
+			<div class="login-form">
+				<div class="int-user">
+					<div class="group">
+						<label for="user" class="label">Username</label>
+						<input id="user" type="text" class="input" required>
+					</div>
+					<div class="group">
+						<label for="pass" class="label">Password</label>
+						<input id="pass" type="password" class="input" data-type="password" required>
+					</div>
+					<div class="group">
+						<input id="check" type="checkbox" class="check" checked>
+						<label for="check"><span class="icon"></span> Keep me Signed in</label>
+						<input type="submit" class="button" value="Login" onClick="window.location.href='dashboard.html';">
+					</div>
+				</div>
+				
+				<div class="ext-user">
+					<div class="group">
+						<label for="user" class="label">Mobile Number</label>
+						<input id="user" type="text" class="input" required>
+					</div>
+					<!--hidden otp section-->
+					<div class="hidden-otp" style="display:none;">
+						<div class="group">
+							<label for="user" class="label">OTP</label>
+							<input id="user" type="text" class="input" required>
+						</div>
+						<div class="group">
+							<input type="submit" class="button" value="Login" onClick="window.location.href='dashboard.html';">
+							<input type="submit" class="button" value="Resend OTP">
+						</div>
+					</div>
+					<!--hidden otp section-->
+					<div class="group">
+						<input type="submit" class="button hide-otp" value="Send OTP">
+					</div>
+				</div>
+				
+			</div>
+		</div>
+	</div>
+</main>
+<!--MAIN END-->
+
+<!--FOOTER START-->
+<footer></footer>
+<!--FOOTER END-->
+</body>
+<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+<script src="js/plugin/bootstrap/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/jquery.slides.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+</html>
